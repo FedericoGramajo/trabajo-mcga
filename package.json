@@ -2,6 +2,9 @@
   "name": "trabajo-mcga",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.15.3"
+  },
   "dependencies": {
     "install": "^0.13.0",
     "npm": "^6.12.1",
