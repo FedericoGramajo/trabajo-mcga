@@ -88,13 +88,13 @@ export const handleLogin = (email, password) => {
         if (!data.success) {
           return Promise.reject(data)
         }
-        dispatch({
+        return dispatch({
           type: 'LOGIN_SUCCESS',
           payload: data,
         })
       })
       .catch(error => {
-        dispatch({
+        return dispatch({
           type: 'LOGIN_ERROR',
           payload: error,
         })
