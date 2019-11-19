@@ -74,7 +74,7 @@ export const handleLogin = (email, password) => {
     })
 
     const options = {
-      baseURL: 'se remplaza por la url del heroku',
+      baseURL: 'https://trabajo-mcga-gramajo.herokuapp.com/',
       timeout: 25000,
       method: 'POST',
       headers: {
@@ -82,7 +82,7 @@ export const handleLogin = (email, password) => {
       },
     }
 
-    return fetch(`se remplaza por la url del heroku + /login`, { ...options, body: JSON.stringify({ email, password }) })
+    return fetch(`https://trabajo-mcga-gramajo.herokuapp.com/login`, { ...options, body: JSON.stringify({ email, password }) })
       .then(res => res.json())
       .then(data => {
         if (!data.success) {
