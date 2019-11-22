@@ -82,7 +82,7 @@ export const handleLogin = (email, password) => {
       },
     }
 
-    return fetch(`https://login-mcga-gramajo.herokuapp.com/login`, { ...options, body: JSON.stringify({ email, password }) })
+    return fetch(`https://server-mcga-gramajo.herokuapp.com/login`, { ...options, body: JSON.stringify({ email, password }) })
       .then(res => res.json())
       .then(data => {
         if (!data.success) {
